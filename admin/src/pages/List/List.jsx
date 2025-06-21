@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react'
 import './List.css'
 import axios from 'axios';
 import { toast } from 'react-toastify';
-// passing url as props to fetch data from backend instead of   const url = "http://localhost:4000"
+// passing url as props to fetch data from backend instead of const url = "http://localhost:4000"
 const List = ({url}) => {
-  // const url = "http://localhost:4000"
+  // const url = "https://food-deliver-app-xb9t.onrender.com/"
   const [list,setList] = useState([]);
 
      const fetchList = async () => {
