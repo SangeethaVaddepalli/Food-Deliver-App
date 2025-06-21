@@ -1,8 +1,6 @@
 import axios from "axios";
 import { createContext, useEffect,useState } from "react";
 
-// import { food_list } from "../assets/frontend_assets/assets";
-
 
 //create context and export
 export const StoreContext = createContext(null);
@@ -13,8 +11,8 @@ const StoreContextProvider =(props) =>{
     const [cartItems,setCartItems] = useState({});
 
     // give url
-    const url = "https://food-backend-i5nu.onrender.com"
-    // const url = "http://localhost:4000"
+    const url = "https://food-deliver-app-xb9t.onrender.com"
+    
     const [token,setToken] = useState("");
     // to store the food list in the state direct from db
     const [food_list,setFoodList] = useState([]);
